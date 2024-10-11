@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cadenas Hoteleras de Lujo</title>
+<style>
+       body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav .menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav .menu li {
+            margin: 0 10px;
+        }
+
+        nav .menu li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            border-radius: 4px;
+        }
+
+        nav .menu li a:hover, .menu li a.active {
+            background-color: #7ccaff;
+        }
+
+* {
+  box-sizing: border-box;
+}
+
+h2 {
+  color: #333;
+}
+
+/* Create a column layout with Flexbox */
+.row {
+  display: flex;
+  margin: 20px;
+}
+
+/* Left column (menu) */
+.left {
+  flex: 25%;
+  padding: 15px;
+  background-color: #333;
+  color: white;
+  border-radius: 10px;
+}
+
+.left h2 {
+  padding-left: 8px;
+  font-size: 24px;
+  color: #7ccaff;
+}
+
+/* Right column (page content) */
+.right {
+  flex: 75%;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+#myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: white;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+#myMenu li a:hover, #myMenu li a.active {
+  background-color: #7ccaff;
+  color: black;
+}
+</style>
+</head>
+<body>
+    
+    <header>
+    <nav>
+        <ul class="menu">
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="destinos.html">Destinos</a></li>
+            <li><a href="hoteles.html"  class="active" >Hoteles</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="mi_perfil.html">Perfil</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="row">
+  <div class="left">
+    <h2>Cadenas Hoteleras</h2>
+    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Buscar cadena hotelera..." title="Buscar cadena hotelera">
+    <ul id="myMenu">
+      <li><a href="#" onclick="showContent('marriott')">Marriott Bonvoy</a></li>
+      <li><a href="#" onclick="showContent('aman')">Aman Resorts</a></li>
+      <li><a href="#" onclick="showContent('fourSeasons')">Four Seasons Hotels and Resorts</a></li>
+      <li><a href="#" onclick="showContent('leadingHotels')">Leading Hotels of the World</a></li>
+      <li><a href="#" onclick="showContent('accor')">Accor</a></li>
+      <li><a href="#" onclick="showContent('ritzCarlton')">Ritz-Carlton</a></li>
+      <li><a href="#" onclick="showContent('belmond')">Belmond Hotels</a></li>
+      <li><a href="#" onclick="showContent('mandarinOriental')">Mandarin Oriental Hotel Group</a></li>
+      <li><a href="#" onclick="showContent('rosewood')">Rosewood Hotels & Resorts</a></li>
+      <li><a href="#" onclick="showContent('stRegis')">St. Regis Hotels & Resorts</a></li>
+      <li><a href="#" onclick="showContent('sixSenses')">Six Senses Hotels Resorts Spas</a></li>
+      <li><a href="#" onclick="showContent('bulgari')">Bulgari Hotels & Resorts</a></li>
+      <li><a href="#" onclick="showContent('oetker')">Oetker Collection</a></li>
+      <li><a href="#" onclick="showContent('relaisChateaux')">Relais & Châteaux</a></li>
+      <li><a href="#" onclick="showContent('waldorfAstoria')">Waldorf Astoria Hotels & Resorts</a></li>
+      <li><a href="#" onclick="showContent('shangriLa')">Shangri-La Hotels and Resorts</a></li>
+      <li><a href="#" onclick="showContent('peninsula')">The Peninsula Hotels</a></li>
+      <li><a href="#" onclick="showContent('oneOnly')">OneAndOnly Resorts</a></li>
+      <li><a href="#" onclick="showContent('hyatt')">Hyatt Hotels Corporation</a></li>
+      <li><a href="#" onclick="showContent('jumeirah')">Jumeirah Group</a></li>
+    </ul>
+  </div>
+  
+  <div class="right" id="contentArea">
+    <h2>Información de la Cadena Hotelera</h2>
+    <p>Selecciona una cadena hotelera del menú para ver más detalles.</p>
+  </div>
+</div>
+
+<script>
+// Function to filter the menu based on search input
+function myFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+
+// Function to display content based on menu selection
+function showContent(chain) {
+  var contentArea = document.getElementById("contentArea");
+  var content = {
+    marriott: `<h2>Marriott Bonvoy</h2><p>Incluye marcas como Marriott, JW Marriott, Sheraton, Westin, entre otras. Es una de las cadenas hoteleras más grandes del mundo, ofreciendo una experiencia de lujo y confort en cada una de sus propiedades.</p>`,
+    aman: `<h2>Aman Resorts</h2><p>Aman Resorts es sinónimo de exclusividad y serenidad, con propiedades en los lugares más remotos y hermosos del mundo. Cada resort es un refugio privado que ofrece una experiencia de lujo incomparable.</p>`,
+    fourSeasons: `<h2>Four Seasons Hotels and Resorts</h2><p>Four Seasons es reconocido globalmente por su servicio excepcional y atención al detalle. Ofrecen experiencias de lujo en destinos clave alrededor del mundo.</p>`,
+    leadingHotels: `<h2>Leading Hotels of the World</h2><p>Una colección de hoteles de lujo independientes, cada uno con su propio carácter y encanto. Estos hoteles ofrecen experiencias auténticas y memorables en los destinos más codiciados.</p>`,
+    accor: `<h2>Accor</h2><p>Incluye marcas como Raffles, Fairmont, Sofitel, entre otras. Accor es una de las mayores cadenas hoteleras, ofreciendo una variedad de experiencias de lujo alrededor del mundo.</p>`,
+    ritzCarlton: `<h2>Ritz-Carlton</h2><p>Parte de Marriott International, Ritz-Carlton es sinónimo de lujo y elegancia. Cada propiedad ofrece una experiencia única, centrada en el servicio impecable y el confort.</p>`,
+    belmond: `<h2>Belmond Hotels</h2><p>Belmond ofrece experiencias de lujo en hoteles icónicos, trenes y cruceros en todo el mundo. Cada propiedad es única, con un fuerte sentido del lugar y la historia.</p>`,
+    mandarinOriental: `<h2>Mandarin Oriental Hotel Group</h2><p>Mandarin Oriental es conocido por su mezcla de lujo oriental y servicio impecable. Sus propiedades se encuentran en destinos clave en todo el mundo.</p>`,
+    rosewood: `<h2>Rosewood Hotels & Resorts</h2><p>Rosewood ofrece una colección de hoteles de lujo que reflejan la historia y la cultura de sus ubicaciones. Cada propiedad está diseñada para ofrecer una experiencia personalizada y auténtica.</p>`,
+    stRegis: `<h2>St. Regis Hotels & Resorts</h2><p>Parte de Marriott International, St. Regis es conocido por su estilo clásico y servicio Butler. Cada propiedad ofrece una experiencia de lujo única y atemporal.</p>`,
+    sixSenses: `<h2>Six Senses Hotels Resorts Spas</h2><p>Six Senses es sinónimo de bienestar y sostenibilidad, con resorts en destinos exóticos. Ofrecen experiencias de lujo enfocadas en la salud y la conexión con la naturaleza.</p>`,
+    bulgari: `<h2>Bulgari Hotels & Resorts</h2><p>Bulgari Hotels & Resorts combina el lujo de la marca Bulgari con la hospitalidad de clase mundial. Sus propiedades se encuentran en algunos de los destinos más exclusivos del mundo.</p>`,
+    oetker: `<h2>Oetker Collection</h2><p>Incluye propiedades icónicas como Le Bristol Paris y Eden Rock. Oetker Collection es conocido por su elegancia clásica y su servicio excepcional en algunos de los destinos más prestigiosos del mundo.</p>`,
+    relaisChateaux: `<h2>Relais & Châteaux</h2><p>Relais & Châteaux es una asociación global de hoteles y restaurantes únicos. Cada propiedad ofrece una experiencia de lujo que refleja el carácter y la cultura de su ubicación.</p>`,
+    waldorfAstoria: `<h2>Waldorf Astoria Hotels & Resorts</h2><p>Parte de Hilton, Waldorf Astoria es sinónimo de lujo y tradición. Sus propiedades ofrecen una experiencia de lujo atemporal, con un enfoque en el servicio y la hospitalidad.</p>`,
+    shangriLa: `<h2>Shangri-La Hotels and Resorts</h2><p>Shangri-La es conocido por su hospitalidad cálida y acogedora, combinada con el lujo asiático. Sus hoteles ofrecen experiencias únicas en destinos clave en Asia y más allá.</p>`,
+    peninsula: `<h2>The Peninsula Hotels</h2><p>The Peninsula es una cadena de hoteles de lujo conocida por su servicio personalizado y su elegancia atemporal. Cada propiedad ofrece una experiencia de lujo inigualable en ciudades icónicas.</p>`,
+    oneOnly: `<h2>One&Only Resorts</h2><p>One&Only Resorts ofrece experiencias de lujo en algunos de los destinos más espectaculares del mundo. Sus resorts son refugios exclusivos que combinan el lujo con la autenticidad local.</p>`,
+    hyatt: `<h2>Hyatt Hotels Corporation</h2><p>Incluye marcas como Park Hyatt y Andaz. Hyatt ofrece una variedad de experiencias de lujo en destinos clave alrededor del mundo, con un enfoque en el servicio y la calidad.</p>`,
+    jumeirah: `<h2>Jumeirah Group</h2><p>Incluye propiedades icónicas como Burj Al Arab y Jumeirah Beach Hotel. Jumeirah es conocido por su lujo opulento y su servicio excepcional en destinos exclusivos.</p>`
+  };
+  
+  contentArea.innerHTML = content[chain];
+  
+  // Remove 'active' class from all links
+  var links = document.querySelectorAll('#myMenu li a');
+  links.forEach(function(link) {
+    link.classList.remove('active');
+  });
+
+  // Add 'active' class to the clicked link
+  event.target.classList.add('active');
+}
+</script>
+
+</body>
+</html>

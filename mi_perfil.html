@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil - Travel Agent</title>
+    <style>
+       body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav .menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav .menu li {
+            margin: 0 10px;
+        }
+
+        nav .menu li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            border-radius: 4px;
+        }
+
+        nav .menu li a:hover, .menu li a.active {
+            background-color: #7ccaff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2em;
+            color: #333;
+        }
+
+        .user-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+
+        .user-info div {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .user-info div:first-child {
+            margin-right: 20px;
+        }
+
+        .user-info h3 {
+            margin-top: 0;
+            color: #444;
+        }
+
+        .reservations {
+            margin-bottom: 30px;
+        }
+
+        .reservations h3 {
+            border-bottom: 2px solid #444;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            color: #444;
+        }
+
+        .reservation-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .reservation-list li {
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .reservation-list li h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        .reservation-list li p {
+            margin: 5px 0;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul class="menu">
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="destinos.html">Destinos</a></li>
+            <li><a href="hoteles.html">Hoteles</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="mi_perfil.html" class="active">Perfil</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>Mi Perfil</h2>
+
+    <div class="user-info">
+        <div>
+            <h3>Información del Usuario</h3>
+            <p><strong>Nombre:</strong> Gabriela </p>
+            <p><strong>Email:</strong> gabriela@example.com</p>
+        </div>
+        <div>
+            <h3>Configuración</h3>
+            <p><a href="#">Cambiar Contraseña</a></p>
+            <p><a href="#">Métodos de Pago</a></p>
+                        <p><a href="#">Editar Información</a></p>
+
+        </div>
+    </div>
+
+    <div class="reservations">
+        <h3>Mis Reservas de Hoteles</h3>
+        <ul class="reservation-list">
+            <li>
+                <h4>Mandarin Oriental Ritz Madrid</h4>
+                <p><strong>Fecha de Entrada:</strong> 20/09/2024</p>
+                <p><strong>Fecha de Salida:</strong> 25/09/2024</p>
+                <p><strong>Estado:</strong> Confirmado</p>
+            </li>
+            <li>
+                <h4>Ritz-Carlton Nueva York</h4>
+                <p><strong>Fecha de Entrada:</strong> 10/10/2024</p>
+                <p><strong>Fecha de Salida:</strong> 15/10/2024</p>
+                <p><strong>Estado:</strong> Pendiente</p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="reservations">
+        <h3>Mis Reservas de Vuelos</h3>
+        <ul class="reservation-list">
+            <li>
+                <h4>Vuelo: Ciudad de México a Madrid</h4>
+                <p><strong>Fecha de Salida:</strong> 20/09/2024</p>
+                <p><strong>Fecha de Llegada:</strong> 21/09/2024</p>
+                <p><strong>Aerolínea:</strong> Iberia</p>
+                <p><strong>Estado:</strong> Confirmado</p>
+            </li>
+            <li>
+                <h4>Vuelo: Madrid a Nueva York</h4>
+                <p><strong>Fecha de Salida:</strong> 10/10/2024</p>
+                <p><strong>Fecha de Llegada:</strong> 11/10/2024</p>
+                <p><strong>Aerolínea:</strong> Delta</p>
+                <p><strong>Estado:</strong> Cancelado</p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="reservations">
+        <h3>Mis Actividades</h3>
+        <ul class="reservation-list">
+            <li>
+                <h4>Tour de la Sagrada Familia</h4>
+                <p><strong>Fecha:</strong> 30/09/2024</p>
+                <p><strong>Estado:</strong> Confirmado</p>
+            </li>
+            <li>
+                <h4>Tour Bernabeu</h4>
+                <p><strong>Fecha:</strong> 22/09/2024</p>
+                <p><strong>Estado:</strong> Pendiente</p>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Travel Agent. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
