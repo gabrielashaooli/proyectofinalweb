@@ -3,106 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Japón - Travel Agent</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
+    <title>California - Travel Agent</title>
 
-        header, footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-        }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            padding: 10px 0;
-        }
-
-        nav .menu {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-        }
-
-        nav .menu li a {
-            text-decoration: none;
-            color: white;
-            font-size: 18px;
-            padding: 10px 15px;
-            transition: background-color 0.3s, color 0.3s;
-            border-radius: 4px;
-        }
-
-        nav .menu li a:hover, .menu li a.active {
-            background-color: #7ccaff;
-        }
-
-        section {
-            max-width: 1000px;
-            margin: 20px auto;
-            padding: 0 20px;
-        }
-
-        h1 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        p {
-            font-size: 1.2em;
-            line-height: 1.6;
-            margin-bottom: 20px;
-            text-align: justify;
-        }
-
-        .slideshow-container {
-            max-width: 100%;
-            margin: auto;
-            position: relative;
-        }
-
-        .prev, .next {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            padding: 16px;
-            color: white;
-            font-weight: bold;
-            font-size: 24px;
-            transition: 0.6s ease;
-            user-select: none;
-        }
-
-        .next {
-            right: 0;
-        }
-
-        .prev:hover, .next:hover {
-            background-color: rgba(0, 0, 0, 0.8);
-        }
-    </style>
+    <link rel="stylesheet" href="../estilos/styles.css">
 </head>
 <body>
     <header>
         <nav>
             <ul class="menu">
-                <li><a href="inicio.html" >Inicio</a></li>
-                <li><a href="destinos.html" class="active">Destinos</a></li>
-                <li><a href="hoteles.html">Hoteles</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="mi_perfil.html">Perfil</a></li>
+                <li><a href="../inicio.html">Inicio</a></li>
+                <li><a href="../destinos.html" class="active">Destinos</a></li>
+                <li><a href="../hoteles.html">Hoteles</a></li>
+                <li><a href="../contacto.html">Contacto</a></li>
+                <li><a href="../mi_perfil.html">Perfil</a></li>
             </ul>
         </nav>
     </header>
+
+    <main>
 
     <section>
         <h1>Explora La Paz</h1>
@@ -111,46 +29,27 @@
     </section>
 
     <section>
-        <div class="slideshow-container">
+        <section class="slideshow-container">
             <div class="mySlides1">
-                <img src="Imagenes/lapaz1.jpg" style="width:100%">
+                <img src="../Imagenes/lapaz1.jpg" style="width:100%">
             </div>
             <div class="mySlides1">
-                <img src="Imagenes/lapaz2.jpg" style="width:100%">
+                <img src="../Imagenes/lapaz2.jpg" style="width:100%">
             </div>
             <div class="mySlides1">
-                <img src="Imagenes/lapaz3.jpg" style="width:100%">
+                <img src="../Imagenes/lapaz3.jpg" style="width:100%">
             </div>
             <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
             <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
         </div>
     </section>
-
+    </main>
+    
     <footer>
         <p>&copy; 2024 Travel Agent</p>
     </footer>
-
-    <script>
-    let slideIndex = [1];
-    let slideId = ["mySlides1"];
-    showSlides(1, 0);
-
-    function plusSlides(n, no) {
-        showSlides(slideIndex[no] += n, no);
-    }
-
-    function showSlides(n, no) {
-        let i;
-        let x = document.getElementsByClassName(slideId[no]);
-        if (n > x.length) {slideIndex[no] = 1}
-        if (n < 1) {slideIndex[no] = x.length}
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        x[slideIndex[no]-1].style.display = "block";
-    }
-    </script>
-
-</body>
-</html>
+    
+    <script src="../scripts/slideshow.js"></script>
+    </body>
+    </html>
 
