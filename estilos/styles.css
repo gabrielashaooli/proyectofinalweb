@@ -376,12 +376,56 @@ nav {
   color: #666;
 }
 
+.hero {
+  background-image: linear-gradient(rgba(0, 123, 255, 0.5), rgba(0, 123, 255, 0.5)), 
+                    url("../Imagenes/fotoviaje.jpg"); /* Ruta relativa */
+  height: 100vh; /* Ajusta la altura si es necesario */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.btn-registro {
+  font-size: 1.5rem;
+  padding: 15px 30px;
+  background-color: #7ccaff;
+  color: white;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-registro:hover {
+  background-color: #0056b3;
+}
+
+.is-invalid {
+  border-color: red;
+  box-shadow: 0 0 5px red;
+}
+
 /* Footer */
 footer p {
   margin: 0;
   padding: 10px 0;
 }
-
 
 /* Footer */
 footer {
