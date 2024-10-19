@@ -42,7 +42,6 @@
                       <div class="d-flex flex-row align-items-center mb-4">
                         <i class="fas fa-user fa-lg me-3"></i>
                         <div class="form-outline flex-fill mb-0">
-                            <!-- El patrón sigue aquí para validar letras, y agregamos una función de validación -->
                             <input type="text" id="usuario" name="usuario" class="form-control" pattern="[A-Za-z]+" title="Solo se permiten letras" required oninput="validarUsuario()" />
                             <label class="form-label" for="usuario">Usuario</label>
                             <small id="usuarioError" class="text-danger" style="display: none;">El nombre de usuario solo puede contener letras.</small>
@@ -56,11 +55,11 @@
                             const regex = /^[A-Za-z]+$/;
                     
                             if (!regex.test(usuarioInput.value)) {
-                                usuarioInput.classList.add("is-invalid");  // Agregar clase de error
-                                errorLabel.style.display = "block";        // Mostrar mensaje de error
+                                usuarioInput.classList.add("is-invalid");  
+                                errorLabel.style.display = "block";        
                             } else {
-                                usuarioInput.classList.remove("is-invalid"); // Quitar clase de error
-                                errorLabel.style.display = "none";           // Ocultar mensaje de error
+                                usuarioInput.classList.remove("is-invalid"); 
+                                errorLabel.style.display = "none";           
                             }
                         }
                     </script>
@@ -88,7 +87,7 @@
                     <div class="form-outline flex-fill mb-0">
                       <select id="rol" name="rol" class="form-control" required>
                         <option value="cliente">Cliente</option>
-                        <option value="admin">Administrador</option>
+                        <option value="administrador">Administrador</option>
                       </select>
                       <label class="form-label" for="rol">Selecciona tu Rol</label>
                     </div>
