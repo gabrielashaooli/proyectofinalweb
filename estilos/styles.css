@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   background-color: #f4f4f4;
   color: #333;
   line-height: 1.6;
@@ -120,7 +120,8 @@ header {
   width: 48%;
 }
 
-h2, h3 {
+h2,
+h3 {
   color: #333;
   margin-bottom: 10px;
 }
@@ -183,9 +184,11 @@ h2, h3 {
   color: white;
 }
 
-
 /* Formulario de Contacto */
-input[type="text"], input[type="number"], select, textarea {
+input[type="text"],
+input[type="number"],
+select,
+textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -272,7 +275,8 @@ body {
   color: #333;
 }
 
-header, footer {
+header,
+footer {
   background-color: #333;
   color: white;
   text-align: center;
@@ -303,7 +307,8 @@ nav {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.menu a:hover, .menu a.active {
+.menu a:hover,
+.menu a.active {
   background-color: #7ccaff;
 }
 
@@ -377,8 +382,11 @@ nav {
 }
 
 .hero {
-  background-image: linear-gradient(rgba(0, 123, 255, 0.5), rgba(0, 123, 255, 0.5)), 
-                    url("../Imagenes/fotoviaje.jpg"); /* Ruta relativa */
+  background-image: linear-gradient(
+      rgba(0, 123, 255, 0.5),
+      rgba(0, 123, 255, 0.5)
+    ),
+    url("../Imagenes/fotoviaje.jpg"); /* Ruta relativa */
   height: 100vh; /* Ajusta la altura si es necesario */
   background-position: center;
   background-repeat: no-repeat;
@@ -434,4 +442,11 @@ footer {
   text-align: center;
   padding: 10px 0;
   margin-top: 20px;
+}
+
+.submit-button {
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
 }
