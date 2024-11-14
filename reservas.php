@@ -55,6 +55,7 @@ $result = $reservas->get_result();
     <nav>
         <ul class="menu">
             <li><a href="mi_perfil.php">Perfil</a></li>
+            <li><a href="plan.html">Plan</a></li>
             <li><a href="reservas.php"class="active">Mis Reservas</a></li>
         </ul>
     </nav>
