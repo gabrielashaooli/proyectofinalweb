@@ -1,15 +1,169 @@
-/* Estilos Generales */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+body {
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgb(194, 219, 229);
 }
 
-body {
-  font-family: "Arial", sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
-  line-height: 1.6;
+ul {
+  list-style: none;
+  margin-right: 25px;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+.weatherapp {
+  border-radius: 20px;
+  background: radial-gradient(
+    465px at -15.1% -25%,
+    rgb(17, 130, 193) 0%,
+    rgb(67, 166, 238) 49%,
+    rgb(126, 203, 244) 90.2%
+  );
+  margin: 0 auto;
+  max-width: 425px;
+  box-shadow: 1px -1px 21px 1px rgba(0, 0, 0, 0.3);
+  margin-top: 30px auto;
+  padding: 16px;
+}
+.search {
+  border-radius: 20px;
+  border: none;
+  font-size: 25px;
+}
+.city {
+  font-size: 30px;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.date {
+  font-size: 20px;
+  color: rgb(52, 51, 51);
+  font-weight: 500;
+}
+.weather {
+  font-size: 25px;
+}
+
+.time {
+  margin-top: 0;
+}
+
+.info {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.info-weather {
+  font-size: 15px;
+}
+
+#info-wind {
+  margin-bottom: 20px;
+  padding: 10px, 0;
+}
+
+.button-search {
+  padding: 5px;
+  margin: 10px;
+  border-radius: 10px;
+  background: rgb(164, 213, 241);
+  border: none;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.button-search:hover {
+  background-color: rgb(206, 223, 237);
+}
+.btnsearch {
+  border-radius: 10px;
+  background: rgb(164, 213, 241);
+  border: none;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  font-size: 15px;
+  margin-right: 5px;
+}
+
+.btnsearch:hover {
+  background-color: rgb(206, 223, 237);
+}
+
+.grid-button {
+  margin-top: 25px;
+}
+
+.conv {
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.units {
+  position: relative;
+  top: -20px;
+}
+
+.current {
+  background: rgb(203, 229, 244);
+}
+
+p {
+  font-size: 10px;
+  padding: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.linkgit {
+  text-decoration: none;
+}
+
+#link {
+  color: rgb(0, 157, 255);
+}
+
+#weatherdesc {
+  margin-top: none;
+  position: relative;
+  top: -10px;
+  font-weight: bold;
+  color: rgb(53, 53, 53);
+  font-size: 15px;
+}
+
+.info-date {
+  color: #4a4a4a;
+  font-size: 12px;
+}
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+  color: #000;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.5;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+}
+
+.weather-forecast-temperatures {
+  font-size: 13px;
+}
+
+#forecast {
+  margin-top: 15px;
 }
 
 /* Header */
@@ -310,143 +464,4 @@ nav {
 .menu a:hover,
 .menu a.active {
   background-color: #7ccaff;
-}
-
-/* Contenedor principal */
-.container {
-  max-width: 1000px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Información del usuario */
-.user-info {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  margin-bottom: 30px;
-}
-
-.user-info div {
-  flex: 1;
-  padding: 10px;
-  background-color: #f9f9f9;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.user-info h3 {
-  margin-top: 0;
-  color: #444;
-}
-
-/* Sección de reservas */
-.reservations {
-  margin-bottom: 30px;
-}
-
-.reservations h3 {
-  border-bottom: 2px solid #444;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-  color: #444;
-}
-
-.reservation-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.reservation-list li {
-  margin-bottom: 15px;
-  padding: 15px;
-  border-radius: 5px;
-  background-color: #f9f9f9;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border: 1px solid #ddd;
-}
-
-.reservation-list h4 {
-  margin: 0 0 10px;
-  font-size: 1.2em;
-  color: #333;
-}
-
-.reservation-list p {
-  margin: 5px 0;
-  color: #666;
-}
-
-.hero {
-  background-image: linear-gradient(
-      rgba(0, 123, 255, 0.5),
-      rgba(0, 123, 255, 0.5)
-    ),
-    url("../Imagenes/fotoviaje.jpg"); /* Ruta relativa */
-  height: 100vh; /* Ajusta la altura si es necesario */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-  padding: 20px;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
-}
-
-.hero p {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-}
-
-.btn-registro {
-  font-size: 1.5rem;
-  padding: 15px 30px;
-  background-color: #7ccaff;
-  color: white;
-  border-radius: 12px;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.btn-registro:hover {
-  background-color: #0056b3;
-}
-
-.is-invalid {
-  border-color: red;
-  box-shadow: 0 0 5px red;
-}
-
-/* Footer */
-footer p {
-  margin: 0;
-  padding: 10px 0;
-}
-
-/* Footer */
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-  margin-top: 20px;
-}
-
-.submit-button {
-  background-color: #333;
-  color: white;
-  border-radius: 5px;
-  padding: 10px;
 }
