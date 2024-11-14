@@ -36,9 +36,12 @@ if ($conn->connect_error) {
 <header>
     <nav>
         <ul class="menu">
-            <li><a href="mi_perfil.php"class="active">Perfil</a></li>
-            <li><a href="plan.html">Plan</a></li>
-            <li><a href="reservas.php">Mis Reservas</a></li>
+        <li><a href="mi_perfil.php"class="active">Perfil</a></li>
+          <li><a href="plan.html">Plan</a></li>
+          <li><a href="vuelos.html">Vuelos</a></li>
+          <li><a href="reservas.php">Mis Reservas</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+
             
         </ul>
     </nav>
