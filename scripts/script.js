@@ -41,51 +41,46 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('DOMContentLoaded', () => {
     const flightSearchForm = document.getElementById('flightSearchForm');
+    const flightResultsList = document.getElementById('flightResultsList');
+
     flightSearchForm.addEventListener('submit', function(event) {
         event.preventDefault();
-
-        const origin = document.getElementById('origin').value;
-        const destination = document.getElementById('destination').value;
-        const departureDate = document.getElementById('departureDate').value;
-
-        searchFlights(origin, destination, departureDate);
+        fetchFlightData();
     });
 
-    function searchFlights(origin, destination, departureDate) {
-        const url = `vuelos.php?origin=${origin}&destination=${destination}&departureDate=${departureDate}`;
+    function fetchFlightData() {
+        const url = `fetch_flight_data.php`;
 
         fetch(url)
             .then(response => response.json())
-            .then(data => {
-                displayFlightData(data);
-            })
-            .catch(error => console.error('Error al obtener los datos de vuelo:', error));
+            .then(data => displayFlightResults(data))
+            .catch(error => {
+                console.error('Error fetching flight data:', error);
+                flightResultsList.innerHTML = "<h6>Error al obtener los datos del vuelo. Inténtelo de nuevo más tarde.</h6>";
+            });
     }
 
-    function displayFlightData(data) {
-        const flightResultsList = document.getElementById('flightResultsList');
-        flightResultsList.innerHTML = ''; // Limpia resultados anteriores
+    function displayFlightResults(data) {
+        flightResultsList.innerHTML = '';  // Clear any previous results
 
-        if (!data || !data.data || data.data.length === 0) {
-            flightResultsList.innerHTML = '<p>No se encontraron vuelos para esta búsqueda.</p>';
-            return;
+        if (data && data.data && data.data.length > 0) {
+            data.data.forEach(flight => {
+                const flightItem = document.createElement('div');
+                flightItem.classList.add('flight-item', 'hero p ');
+                flightItem.innerHTML = `
+                    <p><strong>Fecha de Vuelo:</strong> ${flight.flight_date}</p>
+                    <p><strong>Estado del Vuelo:</strong> ${flight.flight_status}</p>
+                    <p><strong>Aerolínea:</strong> ${flight.airline.name}</p>
+                    <p><strong>Número de Vuelo:</strong> ${flight.flight.iata}</p>
+                    <p><strong>Origen:</strong> ${flight.departure.airport} (${flight.departure.iata})</p>
+                    <p><strong>Destino:</strong> ${flight.arrival.airport} (${flight.arrival.iata})</p>
+                    <p><strong>Hora de Salida Programada:</strong> ${flight.departure.scheduled}</p>
+                    <p><strong>Hora de Llegada Programada:</strong> ${flight.arrival.scheduled}</p>
+                `;
+                flightResultsList.appendChild(flightItem);
+            });
+        } else {
+            flightResultsList.innerHTML = "<p>No se encontraron vuelos para esta búsqueda.</p>";
         }
-
-        data.data.forEach(flight => {
-            const flightElement = document.createElement('div');
-            flightElement.classList.add('flight');
-            flightElement.innerHTML = `
-                <p><strong>Vuelo:</strong> ${flight.flight.iata}</p>
-                <p><strong>Origen:</strong> ${flight.departure.iata} - ${flight.departure.airport}</p>
-                <p><strong>Destino:</strong> ${flight.arrival.iata} - ${flight.arrival.airport}</p>
-                <p><strong>Hora de salida:</strong> ${flight.departure.scheduled}</p>
-                <p><strong>Hora de llegada:</strong> ${flight.arrival.scheduled}</p>
-                <p><strong>Aerolínea:</strong> ${flight.airline.name}</p>
-            `;
-            flightResultsList.appendChild(flightElement);
-        });
     }
 });
-
-
-
