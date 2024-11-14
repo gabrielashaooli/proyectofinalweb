@@ -59,6 +59,7 @@ $result = $reservas->get_result();
           <li><a href="vuelos.html">Vuelos</a></li>
           <li><a href="reservas.php"class="active">Mis Reservas</a></li>
           <li><a href="servicios.html">Servicios</a></li>
+
         </ul>
     </nav>
 </header>
