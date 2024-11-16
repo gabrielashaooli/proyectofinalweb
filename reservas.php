@@ -1,4 +1,3 @@
-
 <?php
 session_start();
 
@@ -37,7 +36,6 @@ $reservas->execute();
 $result = $reservas->get_result();
 ?>
 
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -45,66 +43,62 @@ $result = $reservas->get_result();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Perfil - Travel Agent</title>
     <link rel="stylesheet" href="estilos/styles.css">
-    <link href="../bootstrap/bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="../bootstrap/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
-    <script src="../bootstrap/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
 </head>
-<body style="background-color: #f8f9fa;">
+<body class="bg-light">
 
 <header>
     <nav>
         <ul class="menu">
-          <li><a href="mi_perfil.php">Perfil</a></li>
-          <li><a href="plan.html" >Plan</a></li>
-          <li><a href="vuelos.html">Vuelos</a></li>
-          <li><a href="reservas.php"class="active">Mis Reservas</a></li>
-          <li><a href="servicios.html">Servicios</a></li>
-
+            <li><a href="mi_perfil.php">Perfil</a></li>
+            <li><a href="plan.html">Plan</a></li>
+            <li><a href="vuelos.html">Vuelos</a></li>
+            <li><a href="reservas.php" class="active">Mis Reservas</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
         </ul>
     </nav>
 </header>
 
-<h3 class="text-primary text-center mb-4">Mis Reservas</h3>
-        <div class="table-responsive">
-            <table class="table table-striped">
-                <thead class="table-dark">
+<main class="container my-5">
+    <h3 class="text-primary text-center mb-4">Mis Reservas</h3>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead class="table-dark">
+                <tr>
+                    <th>Destino</th>
+                    <th>Fecha de Inicio</th>
+                    <th>Fecha de Fin</th>
+                    <th>Número de Personas</th>
+                    <th>Total (USD)</th>
+                    <th>Método de Pago</th>
+                    <th>Comentarios</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php while ($reserva = $result->fetch_assoc()) { ?>
                     <tr>
-                        <th>Destino</th>
-                        <th>Fecha de Inicio</th>
-                        <th>Fecha de Fin</th>
-                        <th>Número de Personas</th>
-                        <th>Total (USD)</th>
-                        <th>Método de Pago</th>
-                        <th>Comentarios</th>
-                        <th>Estado</th>
+                        <td><?php echo htmlspecialchars($reserva['destino']); ?></td>
+                        <td><?php echo htmlspecialchars($reserva['fecha_inicio']); ?></td>
+                        <td><?php echo htmlspecialchars($reserva['fecha_fin']); ?></td>
+                        <td><?php echo htmlspecialchars($reserva['num_personas']); ?></td>
+                        <td><?php echo number_format($reserva['total'], 2); ?> USD</td>
+                        <td><?php echo htmlspecialchars($reserva['metodo_pago']); ?></td>
+                        <td><?php echo htmlspecialchars($reserva['comentarios']); ?></td>
+                        <td><?php echo ucfirst(htmlspecialchars($reserva['estado'])); ?></td>
                     </tr>
-                </thead>
-                <tbody>
-
-                    <?php while ($reserva = $result->fetch_assoc()) { ?>
-                        <tr>
-                            <td><?php echo $reserva['destino']; ?></td>
-                            <td><?php echo $reserva['fecha_inicio']; ?></td>
-                            <td><?php echo $reserva['fecha_fin']; ?></td>
-                            <td><?php echo $reserva['num_personas']; ?></td>
-                            <td><?php echo number_format($reserva['total'], 2); ?>USD</td>
-                            <td><?php echo $reserva['metodo_pago']; ?></td>
-                            <td><?php echo $reserva['comentarios']; ?></td>
-                            <td><?php echo ucfirst($reserva['estado']); ?></td>
-                        </tr>
-                    <?php } ?>
-                </tbody>
-            </table>
-        </div>
+                <?php } ?>
+            </tbody>
+        </table>
     </div>
 </main>
 
-<footer class="bg-dark text-white text-center py-3 mt-5">
+<footer class="bg-dark text-white text-center py-3">
     &copy; 2024 Travel Agent. Todos los derechos reservados.
 </footer>
 
-<script src="../bootstrap/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 
