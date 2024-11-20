@@ -77,13 +77,11 @@
           .catch((error) => console.error("Error al cargar destinos.xml:", error));
       });
 
-      // Mostrar/ocultar detalles del destino
       function toggleDetails(index) {
         const detalles = document.getElementById(`destino-${index}`);
         detalles.style.display = detalles.style.display === "none" ? "block" : "none";
       }
 
-      // Control del slideshow
       function plusSlides(slideshowIndex, n) {
         const slides = document.querySelectorAll(`.mySlides-${slideshowIndex}`);
         let slideIndex = Array.from(slides).findIndex(
@@ -96,6 +94,5 @@
       
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
   </body>
 </html>
