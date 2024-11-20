@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<destinos>
+    <destino>
+        <nombre>California</nombre>
+        <descripcion>
+            Un road trip por California es una aventura llena de diversidad y belleza natural. Desde las playas soleadas de Santa Bárbara hasta los majestuosos picos de Yosemite, este viaje ofrece una experiencia completa. Conduce por la icónica Pacific Coast Highway, explora las bodegas de Napa Valley, y maravíllate con las secuoyas gigantes en los parques nacionales.  
+        </descripcion>
+        <imagen>https://heymondo.es/blog/wp-content/uploads/2023/08/Oceanside-Pier-en-California.jpg</imagen>
+        <imagen>https://c.wallhere.com/photos/af/91/yosemite_national_park_lake_rocks_mountains_autumn_nature-584238.jpg!d</imagen>
+        <imagen>..\Imagenes\california3.jpg</imagen>
+    </destino>
+    <destino>
+        <nombre>Canadá Este</nombre>
+        <descripcion>
+        Canadá Este combina la rica historia y cultura de sus ciudades con impresionantes paisajes naturales. Explora la herencia europea en la encantadora Quebec, pasea por las calles históricas de Montreal, y disfruta del vibrante ambiente de Toronto. Además, la región es hogar de maravillas naturales como las Cataratas del Niágara y los bosques de Nueva Escocia, donde también puedes disfrutar de emocionantes esquiadas en invierno. Canadá Este ofrece una mezcla perfecta de tradición, modernidad, y belleza natural, ideal para quienes buscan una experiencia diversa y enriquecedora.
+        </descripcion>
+        <imagen>../Imagenes/california1.jpg</imagen>
+    </destino>
+    <destino>
+        <nombre>Canadá Oeste</nombre>
+        <descripcion>
+        Canadá Oeste es un paraíso natural donde las majestuosas Montañas Rocosas se encuentran con vastos bosques y espectaculares lagos cristalinos. Desde las ciudades vibrantes de Vancouver y Calgary, hasta los icónicos Parques Nacionales de Banff y Jasper, esta región es perfecta para los amantes de la naturaleza, la esquiada y las aventuras al aire libre. Ya sea que disfrutes de senderismo, esquí, o simplemente admirar paisajes de ensueño, Canadá Oeste ofrece una experiencia única e inolvidable en cada estación del año.
+        </descripcion>
+        <imagen>../Imagenes/california1.jpg</imagen>
+    </destino>
+    <destino>
+        <nombre>Disney</nombre>
+        <descripcion>
+        Disney es sinónimo de magia y diversión para todas las edades. Desde los icónicos parques temáticos de Disneyland y Disney World, hasta los espectáculos y desfiles que traen a la vida a los personajes más queridos, una visita a Disney es una experiencia llena de encanto y emoción. Perfecto para familias y fanáticos de todas las generaciones, Disney es el lugar donde los sueños se hacen realidad.
+        </descripcion>
+        <imagen>../Imagenes/california1.jpg</imagen>
+    </destino>
+        <destino>
+        <nombre>Dubai</nombre>
+        <descripcion>
+        Dubái, una ciudad en constante evolución, es conocida por su lujo deslumbrante, arquitectura innovadora y una experiencia de compras sin igual. Desde el icónico Burj Khalifa, el edificio más alto del mundo, hasta los vastos centros comerciales como el Dubai Mall, Dubái ofrece un contraste fascinante entre la modernidad y las tradiciones árabes. Pasea por los zocos históricos, relájate en las playas soleadas, o disfruta de una aventura en el desierto con safaris en dunas. Dubái es un destino que combina lo mejor de la cultura, la innovación y la hospitalidad, haciendo de cada visita una experiencia inolvidable.
+        </descripcion>
+        <imagen>../Imagenes/california1.jpg</imagen>
+    </destino>
+        <destino>
+        <nombre>España</nombre>
+        <descripcion>
+        España es un país lleno de historia, cultura vibrante, y paisajes diversos. Desde las playas soleadas de la Costa del Sol hasta la arquitectura impresionante de Barcelona y los monumentos históricos de Madrid, cada rincón de España tiene algo único que ofrecer. Disfruta de la rica gastronomía, los festivales coloridos, y la calidez de su gente mientras exploras un destino donde la tradición se mezcla con la modernidad.
+        </descripcion>
+        <imagen>../Imagenes/california1.jpg</imagen>
+    </destino>
+        <destino>
+        <nombre>Filipina</nombre>
+        <descripcion>
+        Filipinas es un paraíso tropical en el sudeste asiático, conocido por sus playas de arena blanca, aguas cristalinas, y exuberante naturaleza. Desde las impresionantes terrazas de arroz en Banaue hasta las vibrantes ciudades de Manila y Cebu, Filipinas ofrece una mezcla fascinante de belleza natural y cultura rica. Es un destino ideal para los amantes de la aventura, el buceo y la exploración de islas.
+        </descripcion>
+        <imagen>../Imagenes/california1.jpg</imagen>
+    </destino>
+        <destino>
+        <nombre>Italia del Norte</nombre>
+        <descripcion>
+        Italia Norte es una región rica en historia, cultura y paisajes impresionantes. Desde los majestuosos Alpes y las imponentes Dolomitas hasta las románticas ciudades de Venecia y Milán, esta zona ofrece una mezcla de arte renacentista, moda de alta costura y gastronomía exquisita. Explora los viñedos de la Toscana, los lagos de Como y Garda, y disfruta de una experiencia cultural inigualable en cada esquina.
+        </descripcion>
+        <imagen>../Imagenes/california1.jpg</imagen>
+    </destino>
+        <destino>
+        <nombre>Italia Sur</nombre>
+        <descripcion>
+        Italia Sur es el corazón cálido y acogedor del país, conocido por sus playas deslumbrantes, antiguas ruinas romanas y vibrante vida local. Desde la costa Amalfitana hasta las ciudades históricas de Nápoles y Palermo, esta región combina paisajes espectaculares con una rica herencia cultural. Disfruta de la auténtica cocina italiana, explora pueblos encantadores y sumérgete en la historia y las tradiciones del sur de Italia.
+        </descripcion>
+        <imagen>../Imagenes/california1.jpg</imagen>
+    </destino>
+        <destino>
+        <nombre>Japon</nombre>
+        <descripcion>
+        Japón es un país que ofrece una combinación única de historia, cultura y modernidad. Es un destino ideal para quienes buscan experimentar la tranquilidad de los templos antiguos y jardines zen, mientras disfrutan de la vibrante vida urbana y la innovación tecnológica. La amabilidad de su gente, la seguridad del país y su eficiente red de transporte hacen que viajar por Japón sea una experiencia cómoda y enriquecedora.
+        </descripcion>
+        <imagen>../Imagenes/california1.jpg</imagen>
+    </destino>
+        <destino>
+        <nombre>La Paz</nombre>
+        <descripcion>
+        La Paz, ubicada en Baja California Sur, México, es un destino ideal para los amantes de la naturaleza y la aventura. Con sus impresionantes playas, aguas cristalinas y la riqueza de su vida marina, es un paraíso para el buceo y el esnórquel. Además, sus paisajes desérticos y las islas del Mar de Cortés ofrecen experiencias inolvidables, como avistamiento de ballenas y paseos en kayak.
+        </descripcion>
+        <imagen>../Imagenes/california1.jpg</imagen>
+    </destino>
+        <destino>
+        <nombre>Peru</nombre>
+        <descripcion>
+        Perú es un país que destaca por su combinación de historia, cultura y paisajes naturales únicos. Desde la antigua ciudad de Machu Picchu hasta la selva amazónica y la costa del Pacífico, Perú ofrece una experiencia inolvidable para todos los viajeros. Disfruta de su deliciosa gastronomía, sus tradiciones milenarias y la hospitalidad de su gente.
+        </descripcion>
+        <imagen>../Imagenes/california1.jpg</imagen>
+    </destino>
+        <destino>
+        <nombre>Portugal</nombre>
+        <descripcion>
+        Portugal es un país que combina a la perfección su rica historia con paisajes naturales de gran belleza. Desde las calles empedradas de Lisboa y Oporto hasta las playas doradas del Algarve, Portugal ofrece una mezcla única de cultura, gastronomía y hospitalidad. Descubre sus castillos medievales, viñedos y una costa impresionante que atrae a surfistas y amantes del sol por igual.
+        </descripcion>
+        <imagen>../Imagenes/california1.jpg</imagen>
+    </destino>
+        <destino>
+        <nombre>Turquía</nombre>
+        <descripcion>
+        Turquía es un cruce de caminos entre Oriente y Occidente, lleno de historia, cultura y maravillas naturales. Desde las antiguas calles de Estambul, con su impresionante Hagia Sophia, hasta los paisajes surrealistas de Capadocia y las playas del Mediterráneo, Turquía es un país de contrastes y belleza. Descubre su rica herencia cultural, disfruta de su deliciosa gastronomía y explora los bazares vibrantes y las ruinas de antiguas civilizaciones.
+        </descripcion>
+        <imagen>../Imagenes/california1.jpg</imagen>
+    </destino>
+</destinos>

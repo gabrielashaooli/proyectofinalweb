@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hoteles>
+    <hotel>
+        <id>marriott</id>
+        <nombre>Marriott Bonvoy</nombre>
+        <descripcion>Incluye marcas como Marriott, JW Marriott, Sheraton, Westin, entre otras. Es una de las cadenas hoteleras más grandes del mundo, ofreciendo una experiencia de lujo y confort en cada una de sus propiedades.</descripcion>
+        <imagen>https://cache.marriott.com/content/dam/marriott-digital/jw/cala/hws/m/mexsf/en_us/photo/unlimited/assets/mexsf-exterior-0049.jpg</imagen>
+        <link>https://www.marriott.com</link>
+    </hotel>
+    <hotel>
+        <id>aman</id>
+        <nombre>Aman Resorts</nombre>
+        <descripcion>Aman Resorts es sinónimo de exclusividad y serenidad, con propiedades en los lugares más remotos y hermosos del mundo. Cada resort es un refugio privado que ofrece una experiencia de lujo incomparable.</descripcion>
+        <imagen>https://www.aman.com/sites/default/files/2021-02/210204_AmanHero_Landscape_Amangiri.jpg</imagen>
+        <link>https://www.aman.com/es</link>
+    </hotel>
+    <hotel>
+        <id>fourSeasons</id>
+        <nombre>Four Seasons Hotels and Resorts</nombre>
+        <descripcion>Four Seasons es reconocido globalmente por su servicio excepcional y atención al detalle. Ofrecen experiencias de lujo en destinos clave alrededor del mundo.</descripcion>
+        <imagen>https://secure.s.forbestravelguide.com/img/properties/four-seasons-resort-orlando-at-walt-disney-world-resort/four-seasons-resort-orlando-at-walt-disney-world-resort-lazy-river-aerial.jpg</imagen>
+        <link>https://www.fourseasons.com/es/</link>
+    </hotel>
+    <hotel>
+        <id>leadingHotels</id>
+        <nombre>Leading Hotels of the World</nombre>
+        <descripcion>Una colección de hoteles de lujo independientes, cada uno con su propio carácter y encanto. Estos hoteles ofrecen experiencias auténticas y memorables en los destinos más codiciados.</descripcion>
+        <imagen>https://static-new.lhw.com/-/media/Images/Press-Center/Carousel-Images/Five-New-Members-Feb-2015/Royal-Palm-Marrakech.jpg</imagen>
+        <link>https://es.lhw.com/</link>
+    </hotel>
+    <hotel>
+        <id>accor</id>
+        <nombre>Accor</nombre>
+        <descripcion>Incluye marcas como Raffles, Fairmont, Sofitel, entre otras. Accor es una de las mayores cadenas hoteleras, ofreciendo una variedad de experiencias de lujo alrededor del mundo.</descripcion>
+        <imagen>https://media.viajando.travel/p/4229a76e42399e8bdf2d1ef0e4a9af2d/adjuntos/236/imagenes/000/671/0000671636/1200x675/smart/accor_marival-2jpg.jpg</imagen>
+        <link>https://all.accor.com/a/es.html/</link>
+    </hotel>
+    <hotel>
+        <id>ritzCarlton</id>
+        <nombre>Ritz-Carlton</nombre>
+        <descripcion>Parte de Marriott International, Ritz-Carlton es sinónimo de lujo y elegancia. Cada propiedad ofrece una experiencia única, centrada en el servicio impecable y el confort.</descripcion>
+        <imagen>https://tennisresortsonline.com/wp-content/uploads/2023/08/RCHMB-Resort-Exterior-1.jpg</imagen>
+        <link>https://www.ritzcarlton.com/</link>
+    </hotel>
+    <hotel>
+        <id>belmond</id>
+        <nombre>Belmond Hotels</nombre>
+        <descripcion>Belmond ofrece experiencias de lujo en hoteles icónicos, trenes y cruceros en todo el mundo. Cada propiedad es única, con un fuerte sentido del lugar y la historia.</descripcion>
+        <imagen>https://img.belmond.com/image/upload/f_auto,t_320x222/photos/ele/ele-ext-aerial10.jpg</imagen>
+        <link>https://www.belmond.com/</link> 
+    </hotel>
+    <hotel>
+        <id>mandarinOriental</id>
+        <nombre>Mandarin Oriental Hotel Group</nombre>
+        <descripcion>Mandarin Oriental es conocido por su mezcla de lujo oriental y servicio impecable. Sus propiedades se encuentran en destinos clave en todo el mundo.</descripcion>
+        <imagen>https://www.travelandleisure.com/thmb/ZnajT5UvLslKRxB7vsHVIDsFFeM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/TAL-header-verandah-terrace-mandarin-oriental-bangkok-MOBANGKOK0724-29d6987bb16740da8490b42b06d7ba94.jpg</imagen>
+        <link>https://www.mandarinoriental.com/en/</link> 
+    </hotel>
+    <hotel>
+        <id>rosewood</id>
+        <nombre>Rosewood Hotels Resorts</nombre>
+        <descripcion>Rosewood ofrece una colección de hoteles de lujo que reflejan la historia y la cultura de sus ubicaciones. Cada propiedad está diseñada para ofrecer una experiencia personalizada y auténtica.</descripcion>
+        <imagen>https://e00-expansion.uecdn.es/assets/multimedia/imagenes/2023/12/01/17014220173195.jpg</imagen>
+        <link>https://www.rosewoodhotels.com/en/default</link> 
+    </hotel>
+    <hotel>
+        <id>stRegis</id>
+        <nombre>St. Regis Hotels and Resorts</nombre>
+        <descripcion>Parte de Marriott International, St. Regis es conocido por su estilo clásico y servicio Butler. Cada propiedad ofrece una experiencia de lujo única y atemporal.</descripcion>
+        <imagen>https://i.pinimg.com/736x/54/ac/0f/54ac0fe2c2b2f37e81e82ea15695fc03.jpg</imagen>
+        <link>https://st-regis.marriott.com/</link> 
+    </hotel>
+    <hotel>
+        <id>sixSenses</id>
+        <nombre>Six Senses Hotels Resorts Spas</nombre>
+        <descripcion>Six Senses es sinónimo de bienestar y sostenibilidad, con resorts en destinos exóticos. Ofrecen experiencias de lujo enfocadas en la salud y la conexión con la naturaleza</descripcion>
+        <imagen>https://www.greatwinecapitals.com/wp-content/uploads/2021/01/Six-senses-img.jpg</imagen>
+        <link>https://www.sixsenses.com/en/</link> 
+    </hotel>
+    <hotel>
+        <id>bulgari</id>
+        <nombre>Bulgari Hotels and Resorts</nombre>
+        <descripcion>Bulgari Hotels and Resorts combina el lujo de la marca Bulgari con la hospitalidad de clase mundial. Sus propiedades se encuentran en algunos de los destinos más exclusivos del mundo.</descripcion>
+        <imagen>https://media-cdn.tripadvisor.com/media/photo-s/2c/d5/21/fc/exterior.jpg</imagen>
+        <link>https://www.bulgarihotels.com/</link> 
+    </hotel>
+    <hotel>
+        <id>oetker</id>
+        <nombre>Oetker Collection</nombre>
+        <descripcion>Incluye propiedades icónicas como Le Bristol Paris y Eden Rock. Oetker Collection es conocido por su elegancia clásica y su servicio excepcional en algunos de los destinos más prestigiosos del mundo..</descripcion>
+        <imagen>https://conciergemagazine.com.mx/wp-content/uploads/2023/07/hotel-la-palma-facade-landscape.jpg</imagen>
+        <link>https://www.oetkercollection.com/es/</link> 
+    </hotel>
+    <hotel>
+        <id>relaisChateaux</id>
+        <nombre>Relais and Châteaux</nombre>
+        <descripcion>Relais and Châteaux es una asociación global de hoteles y restaurantes únicos. Cada propiedad ofrece una experiencia de lujo que refleja el carácter y la cultura de su ubicación.</descripcion>
+        <imagen>https://static.prod.r53.tablethotels.com/media/hotels/slideshow_images_staged/large/1384248.jpg</imagen>
+        <link>https://www.relaischateaux.com/es/</link>  
+    </hotel>
+    <hotel>
+        <id>waldorfAstoria</id>
+        <nombre>Waldorf Astoria</nombre>
+        <descripcion>Parte de Hilton, Waldorf Astoria es sinónimo de lujo y tradición. Sus propiedades ofrecen una experiencia de lujo atemporal, con un enfoque en el servicio y la hospitalidad.</descripcion>
+        <imagen>https://images.squarespace-cdn.com/content/v1/5091bda5e4b0979eac787995/1469105299931-HUVYQT54NU6PRZDPCTR2/The+Waldorf+Astoria+Jerusalem+Garden+Terrace+2.JPG</imagen>
+        <link>https://thewaldorfus.com/</link> 
+    </hotel>
+    <hotel>
+        <id>shangriLa</id>
+        <nombre>Shangri-La Hotels and Resorts</nombre>
+        <descripcion>Shangri-La es conocido por su hospitalidad cálida y acogedora, combinada con el lujo asiático. Sus hoteles ofrecen experiencias únicas en destinos clave en Asia y más allá.</descripcion>
+        <imagen>https://shangri-la-hotel-paris.hotelmix.es/data/Photos/OriginalPhoto/12738/1273892/1273892149/Shangri-La-Paris-Hotel-Exterior.JPEG</imagen>
+        <link>https://www.shangri-la.com/</link>  
+    </hotel>
+    <hotel>
+        <id>peninsula</id>
+        <nombre>The Peninsula Hotels</nombre>
+        <descripcion>The Peninsula es una cadena de hoteles de lujo conocida por su servicio personalizado y su elegancia atemporal. Cada propiedad ofrece una experiencia de lujo inigualable en ciudades icónicas.</descripcion>
+        <imagen>https://www.turizmprojedergisi.com/resim/6368b0939752apeninsula-ana%20resim.JPG</imagen>
+        <link>https://www.peninsula.com/en/default</link> 
+    </hotel>
+    <hotel>
+        <id>oneOnly</id>
+        <nombre>OneAndOnly Resorts</nombre>
+        <descripcion>OneandOnly Resorts ofrece experiencias de lujo en algunos de los destinos más espectaculares del mundo. Sus resorts son refugios exclusivos que combinan el lujo con la autenticidad local.</descripcion>
+        <imagen>https://www.lexlatin.com/sites/default/files/2022-06/oneonlymandarinadrone641master.jpg</imagen>
+        <link>https://www.oneandonlyresorts.com/</link> 
+    </hotel>
+    <hotel>
+        <id>hyatt</id>
+        <nombre>Hyatt Hotels Corporation</nombre>
+        <descripcion>Incluye marcas como Park Hyatt y Andaz. Hyatt ofrece una variedad de experiencias de lujo en destinos clave alrededor del mundo, con un enfoque en el servicio y la calidad.</descripcion>
+        <imagen>https://assets.hyatt.com/content/dam/hyatt/hyattdam/images/2018/01/23/0953/Hyatt-Regency-Delhi-P312-Facade.jpg/Hyatt-Regency-Delhi-P312-Facade.4x3.jpg</imagen>
+        <link>https://www.hyatt.com/es-ES/home</link> 
+    </hotel>
+    <hotel>
+        <id>jumeirah</id>
+        <nombre>Jumeirah Group</nombre>
+        <descripcion>Incluye propiedades icónicas como Burj Al Arab y Jumeirah Beach Hotel. Jumeirah es conocido por su lujo opulento y su servicio excepcional en destinos exclusivos.</descripcion>
+        <imagen>https://www.lemispa.com/en/wp-content/uploads/sites/3/2022/11/Cop_Jumeirah-Beach-Hotel-Dubai-Talise-Spa.jpg</imagen>
+        <link>https://www.jumeirah.com/en</link> 
+    </hotel>
+</hoteles>
