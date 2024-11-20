@@ -1,0 +1,57 @@
+.carousel-inner img {
+  max-height: 400px;
+  object-fit: cover;
+}
+
+footer {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.container h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.btn-registro {
+  font-size: 18px;
+  padding: 12px 25px;
+}
+
+.container h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.btn-registro {
+  font-size: 18px;
+  padding: 12px 25px;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.photo-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.photo-grid img:hover {
+  transform: scale(1.1);
+}
+
+.photo-grid .col {
+  padding: 0;
+  margin-bottom: 20px;
+}
