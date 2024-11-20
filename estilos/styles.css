@@ -421,7 +421,7 @@ nav {
 }
 
 .btn-registro:hover {
-  background-color: #0056b3;
+  background-color: #7ccaff;
 }
 
 .is-invalid {
@@ -472,6 +472,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 .destino {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -481,26 +482,50 @@ body {
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
-.slideshow-container img {
-  max-height: 200px;
-  object-fit: cover;
-}
-
+/* Botones */
 .prev,
 .next {
   cursor: pointer;
   z-index: 2;
+  font-size: 16px;
+  background-color: white;
+  color: #aed5fe;
+  border: 2px solid #aed5fe;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.destino-titulo {
-  cursor: pointer;
+.prev:hover,
+.next:hover {
+  background-color: #aed5fe;
+  color: white;
+}
+
+/* Encabezado */
+.card-header {
+  background-color: #aed5fe;
+  color: white;
   font-weight: bold;
+  text-align: center;
 }
 
 .card-header:hover {
-  background-color: #0056b3;
+  background-color: #aed5fe;
 }
 
+/* Slideshow imágenes */
+.slideshow-container img {
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Contenedor responsivo */
 @media (max-width: 768px) {
   .prev,
   .next {
