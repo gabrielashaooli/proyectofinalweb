@@ -61,71 +61,72 @@
         <descripcion>
         Filipinas es un paraíso tropical en el sudeste asiático, conocido por sus playas de arena blanca, aguas cristalinas, y exuberante naturaleza. Desde las impresionantes terrazas de arroz en Banaue hasta las vibrantes ciudades de Manila y Cebu, Filipinas ofrece una mezcla fascinante de belleza natural y cultura rica. Es un destino ideal para los amantes de la aventura, el buceo y la exploración de islas.
         </descripcion>
-        <imagen></imagen>
-        <imagen></imagen>
-        <imagen></imagen>
+        <imagen>https://www.paises.net/wp-content/uploads/2023/09/filipinas-paises.jpg</imagen>
+        <imagen>https://www.viajaenblog.com/wp-content/uploads/2018/02/Apulit-Island-philippines-1140x855.jpg</imagen>
+        <imagen>https://cdn.prod.website-files.com/5feb69fa89b2c651f73eb56f/62aba4e8a025908d6f260422_Residencia_Filipinas_835.jpg</imagen>
     </destino>
         <destino>
         <nombre>Italia del Norte</nombre>
         <descripcion>
         Italia Norte es una región rica en historia, cultura y paisajes impresionantes. Desde los majestuosos Alpes y las imponentes Dolomitas hasta las románticas ciudades de Venecia y Milán, esta zona ofrece una mezcla de arte renacentista, moda de alta costura y gastronomía exquisita. Explora los viñedos de la Toscana, los lagos de Como y Garda, y disfruta de una experiencia cultural inigualable en cada esquina.
         </descripcion>
-        <imagen></imagen>
-        <imagen></imagen>
-        <imagen></imagen>
+        <imagen>https://www.travelreport.mx/wp-content/uploads/2024/08/los-imperdibles-de-los-lagos-del-norte-y-dolomitas-1000x600.jpg</imagen>
+        <imagen>https://media.iatiseguros.com/wp-content/uploads/2020/01/04012818/que-ver-dolomitas-1.jpg</imagen>
+        <imagen>https://cms.w2m.com/.imaging/is9/Sites/Imagenes-TTOO/EUROPA/Italia/Lago-Maggiore/italia-lago-maggiore-isola-bella-1.jpg</imagen>
+ 
     </destino>
         <destino>
         <nombre>Italia Sur</nombre>
         <descripcion>
         Italia Sur es el corazón cálido y acogedor del país, conocido por sus playas deslumbrantes, antiguas ruinas romanas y vibrante vida local. Desde la costa Amalfitana hasta las ciudades históricas de Nápoles y Palermo, esta región combina paisajes espectaculares con una rica herencia cultural. Disfruta de la auténtica cocina italiana, explora pueblos encantadores y sumérgete en la historia y las tradiciones del sur de Italia.
         </descripcion>
-        <imagen></imagen>
-        <imagen></imagen>
-        <imagen></imagen>
+        <imagen>https://www.panavision-tours.com/img_folletos/VO8/9_3.jpg</imagen>
+        <imagen>https://viajes.nationalgeographic.com.es/medio/2023/05/25/polignano-a-mare_828cc932_230525153703_1200x800.jpg</imagen>
+        <imagen>https://www.cloud-europamundo.com/img/carousel/big/Sorrento_20210602152315.jpg</imagen>
     </destino>
         <destino>
         <nombre>Japon</nombre>
         <descripcion>
         Japón es un país que ofrece una combinación única de historia, cultura y modernidad. Es un destino ideal para quienes buscan experimentar la tranquilidad de los templos antiguos y jardines zen, mientras disfrutan de la vibrante vida urbana y la innovación tecnológica. La amabilidad de su gente, la seguridad del país y su eficiente red de transporte hacen que viajar por Japón sea una experiencia cómoda y enriquecedora.
         </descripcion>
-        <imagen></imagen>
-        <imagen></imagen>
-        <imagen></imagen>
+        <imagen>https://www.advantour.com/img/japan/images/index.jpg</imagen>
+        <imagen>https://media.traveler.es/photos/61377a12cfa50ebf3bf4e697/master/w_960,c_limit/98873.jpg</imagen>
+        <imagen>https://www.disfrutatokio.com/f/japon/tokio/guia/shibuya-m.jpg</imagen>
     </destino>
         <destino>
         <nombre>La Paz</nombre>
         <descripcion>
         La Paz, ubicada en Baja California Sur, México, es un destino ideal para los amantes de la naturaleza y la aventura. Con sus impresionantes playas, aguas cristalinas y la riqueza de su vida marina, es un paraíso para el buceo y el esnórquel. Además, sus paisajes desérticos y las islas del Mar de Cortés ofrecen experiencias inolvidables, como avistamiento de ballenas y paseos en kayak.
         </descripcion>
-        <imagen></imagen>
-        <imagen></imagen>
-        <imagen></imagen>
+        <imagen>https://blog.vivaaerobus.com/wp-content/uploads/2019/12/Playas-en-La-Paz-Baja-California.jpg</imagen>
+        <imagen>https://s3-us-west-2.amazonaws.com/wp-ccnegocios/wp-content/uploads/2021/05/12162744/Diving-in-Loreto-The-Aquarium-of-the-World.jpg</imagen>
+        <imagen>https://bravedivers.com/viajesdebuceo/wp-content/uploads/2022/12/Baja-California-Sur-El-acuario-del-Mundo.jpg</imagen>
     </destino>
         <destino>
         <nombre>Peru</nombre>
         <descripcion>
         Perú es un país que destaca por su combinación de historia, cultura y paisajes naturales únicos. Desde la antigua ciudad de Machu Picchu hasta la selva amazónica y la costa del Pacífico, Perú ofrece una experiencia inolvidable para todos los viajeros. Disfruta de su deliciosa gastronomía, sus tradiciones milenarias y la hospitalidad de su gente.
         </descripcion>
-        <imagen></imagen>
-        <imagen></imagen>
-        <imagen></imagen>
+        <imagen>https://cdn.forbes.com.mx/2023/08/razones-para-viajar-peru.webp</imagen>
+        <imagen>https://ecosistemas.win/wp-content/uploads/lineas-nazca.jpg</imagen>
+        <imagen>https://cdn0.bioenciclopedia.com/es/posts/1/5/1/alpaca_151_600.webp</imagen>
     </destino>
         <destino>
         <nombre>Portugal</nombre>
         <descripcion>
         Portugal es un país que combina a la perfección su rica historia con paisajes naturales de gran belleza. Desde las calles empedradas de Lisboa y Oporto hasta las playas doradas del Algarve, Portugal ofrece una mezcla única de cultura, gastronomía y hospitalidad. Descubre sus castillos medievales, viñedos y una costa impresionante que atrae a surfistas y amantes del sol por igual.
         </descripcion>
-        <imagen></imagen>
-        <imagen></imagen>
-        <imagen></imagen>
+        <imagen>https://images.resosys.com/destinations/11/articles/how-to-get-to-madeira_en/thumb2x_1704463693-aerial-view-of-madeira-island.-land-meets-ocean-in-seixal-madeira-portugal1.jpg</imagen>
+        <imagen>https://www.elindependiente.com/wp-content/uploads/2024/08/9-ciudades-visitar-portugal.jpg</imagen>
+        <imagen>https://media.revistaad.es/photos/63048292913e0311ae870487/16:9/w_2623,h_1475,c_limit/Algar%20de%20Benagil%20-%20Benagil%20beach%20cave,%20Lagoa_Credit%20Bruno%20Carlos.jpg</imagen>
     </destino>
         <destino>
         <nombre>Turquía</nombre>
         <descripcion>
         Turquía es un cruce de caminos entre Oriente y Occidente, lleno de historia, cultura y maravillas naturales. Desde las antiguas calles de Estambul, con su impresionante Hagia Sophia, hasta los paisajes surrealistas de Capadocia y las playas del Mediterráneo, Turquía es un país de contrastes y belleza. Descubre su rica herencia cultural, disfruta de su deliciosa gastronomía y explora los bazares vibrantes y las ruinas de antiguas civilizaciones.
         </descripcion>
-        <imagen></imagen>
-        <imagen></imagen>
-        <imagen></imagen>
+        <imagen>https://blog.nattule.com/wp-content/uploads/2016/07/valle-rosa.jpg</imagen>
+        <imagen>https://www.ongoldroad.com/wp-content/uploads/2018/04/shutterstock_743553439.jpg.pagespeed.ce.bJgrE-NRv4.jpg</imagen>
+        <imagen>https://kleostourism.com/wp-content/uploads/2023/06/pamukkale-piscinas-termais.jpg</imagen>
     </destino>
 </destinos>
