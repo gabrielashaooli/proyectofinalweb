@@ -1,0 +1,67 @@
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.destino {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.destino .card-body {
+  padding: 20px;
+}
+
+.destino-titulo {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.destino-detalles {
+  font-size: 1rem;
+  color: #555;
+}
+
+.slideshow-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.slideshow-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
