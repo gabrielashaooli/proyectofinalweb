@@ -12,7 +12,7 @@
     <destino>
         <nombre>Canadá Este</nombre>
         <descripcion>
-        Canadá Este combina la rica historia y cultura de sus ciudades con impresionantes paisajes naturales. Explora la herencia europea en la encantadora Quebec, pasea por las calles históricas de Montreal, y disfruta del vibrante ambiente de Toronto. Además, la región es hogar de maravillas naturales como las Cataratas del Niágara y los bosques de Nueva Escocia, donde también puedes disfrutar de emocionantes esquiadas en invierno. Canadá Este ofrece una mezcla perfecta de tradición, modernidad, y belleza natural, ideal para quienes buscan una experiencia diversa y enriquecedora.
+        Canadá Este combina la rica historia y cultura de sus ciudades con impresionantes paisajes naturales. Pasea por las calles históricas de Montreal, y disfruta del vibrante ambiente de Toronto. Además, la región es hogar de maravillas naturales como las Cataratas del Niágara y los bosques de Nueva Escocia, donde también puedes disfrutar de  esquiadas en invierno. 
         </descripcion>
         <imagen>https://img.freepik.com/fotos-premium/vista-detallada-todas-cataratas-niagara-horseshoe-falls-arriba-canada-barco-turistico-otono_501731-5898.jpg?w=900</imagen>
         <imagen>https://lestresorsderable.com/img/cms/Blog%20Canada%20l%20Octobre%202023/decouvrir-la-magie-de-la-cote-est-du-canada-260x180.jpg</imagen>
@@ -23,7 +23,7 @@
     <destino>
         <nombre>Canadá Oeste</nombre>
         <descripcion>
-        Canadá Oeste es un paraíso natural donde las majestuosas Montañas Rocosas se encuentran con vastos bosques y espectaculares lagos cristalinos. Desde las ciudades vibrantes de Vancouver y Calgary, hasta los icónicos Parques Nacionales de Banff y Jasper, esta región es perfecta para los amantes de la naturaleza, la esquiada y las aventuras al aire libre. Ya sea que disfrutes de senderismo, esquí, o simplemente admirar paisajes de ensueño, Canadá Oeste ofrece una experiencia única e inolvidable en cada estación del año.
+        Canadá Oeste es un paraíso natural donde las majestuosas Montañas Rocosas con vastos bosques y espectaculares lagos cristalinos. Desde las ciudades vibrantes de Vancouver y Calgary, hasta los icónicos Parques Nacionales de Banff y Jasper, esta región es perfecta para  esquiar y las aventuras al aire libre. Ya sea que disfrutes de senderismo, esquí, o admirar paisajes.
         </descripcion>
         <imagen>https://img.freepik.com/fotos-premium/hermoso-lago-moraine-parque-nacional-banff-alberta-canada_131985-98.jpg?w=900</imagen>
         <imagen>https://tandemluxurytravel.com/wp-content/uploads/2023/07/shutterstock_1271965858.jpg</imagen>
@@ -41,7 +41,7 @@
         <destino>
         <nombre>Dubai</nombre>
         <descripcion>
-        Dubái, una ciudad en constante evolución, es conocida por su lujo deslumbrante, arquitectura innovadora y una experiencia de compras sin igual. Desde el icónico Burj Khalifa, el edificio más alto del mundo, hasta los vastos centros comerciales como el Dubai Mall, Dubái ofrece un contraste fascinante entre la modernidad y las tradiciones árabes. Pasea por los zocos históricos, relájate en las playas soleadas, o disfruta de una aventura en el desierto con safaris en dunas. Dubái es un destino que combina lo mejor de la cultura, la innovación y la hospitalidad, haciendo de cada visita una experiencia inolvidable.
+        Dubái, una ciudad en constante evolución, es conocida por su lujo deslumbrante, arquitectura innovadora y una experiencia de compras sin igual. Desde el icónico Burj Khalifa, el edificio más alto del mundo, hasta los vastos centros comerciales como el Dubai Mall, Dubái ofrece un contraste fascinante entre la modernidad y las tradiciones árabes. 
         </descripcion>
         <imagen>https://www.visitdubai.com/-/media/gathercontent/poi/b/burj-khalifa/fallback-image/poi-burj-khalifa-3-dtcm-jun-2023.jpg</imagen>
         <imagen>https://media.admagazine.com/photos/618a646aaf428eae6e0b59f7/16:9/w_2656,h_1494,c_limit/70927.jpg</imagen>
@@ -50,7 +50,7 @@
         <destino>
         <nombre>España</nombre>
         <descripcion>
-        España es un país lleno de historia, cultura vibrante, y paisajes diversos. Desde las playas soleadas de la Costa del Sol hasta la arquitectura impresionante de Barcelona y los monumentos históricos de Madrid, cada rincón de España tiene algo único que ofrecer. Disfruta de la rica gastronomía, los festivales coloridos, y la calidez de su gente mientras exploras un destino donde la tradición se mezcla con la modernidad.
+        España es un país lleno de historia, cultura vibrante, y paisajes diversos. Desde las playas soleadas de la Costa del Sol hasta la arquitectura impresionante de Barcelona y los monumentos históricos de Madrid, cada rincón de España tiene algo único que ofrecer. Disfruta de la rica gastronomía y los festivales coloridos que hacen de España un destino inolvidable.
         </descripcion>
         <imagen>https://viajesmadrina.com/wp-content/uploads/2023/10/jorge-fernandez-salas-ChSZETOal-I-unsplash-1024x683.jpg</imagen>
         <imagen>https://imagenes.20minutos.es/files/image_1920_1080/uploads/imagenes/2023/07/14/basilica-de-la-sagrada-familia.jpeg</imagen>
@@ -78,7 +78,8 @@
         <destino>
         <nombre>Italia Sur</nombre>
         <descripcion>
-        Italia Sur es el corazón cálido y acogedor del país, conocido por sus playas deslumbrantes, antiguas ruinas romanas y vibrante vida local. Desde la costa Amalfitana hasta las ciudades históricas de Nápoles y Palermo, esta región combina paisajes espectaculares con una rica herencia cultural. Disfruta de la auténtica cocina italiana, explora pueblos encantadores y sumérgete en la historia y las tradiciones del sur de Italia.
+        Italia Sur es el corazón cálido y acogedor del país, conocido por sus playas deslumbrantes, antiguas ruinas romanas y vibrante vida local. Desde la costa Amalfitana hasta las ciudades históricas de Nápoles y Palermo, esta región combina paisajes espectaculares con una rica herencia cultural. Disfruta de la auténtica cocina italiana y explora pueblos encantadores 
+        
         </descripcion>
         <imagen>https://www.panavision-tours.com/img_folletos/VO8/9_3.jpg</imagen>
         <imagen>https://viajes.nationalgeographic.com.es/medio/2023/05/25/polignano-a-mare_828cc932_230525153703_1200x800.jpg</imagen>
