@@ -10,7 +10,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="estilos/stylehotels.css" />
+    <link rel="stylesheet" href="../estilos/stylehotels.css" />
   </head>
   <body>
     <header>
@@ -74,7 +74,7 @@
     </div>
 
     <script>
-      fetch("datahoteles.xml")
+      fetch("../src/datahoteles.xml")
         .then((response) => response.text())
         .then((data) => {
           const parser = new DOMParser();
@@ -99,7 +99,7 @@
         );
 
       function showContent(id) {
-        fetch("datahoteles.xml")
+        fetch("../src/datahoteles.xml")
           .then((response) => response.text())
           .then((data) => {
             const parser = new DOMParser();
