@@ -1,0 +1,100 @@
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+
+.menu li a.active {
+  color: black;
+}
+
+.menu li a:hover {
+  color: black;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.left {
+  flex: 1 1 300px;
+  padding: 20px;
+  background-color: var(--menu-bg-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.right {
+  flex: 2 1 600px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#search {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: #dcdcdc;
+}
+
+#myMenu li {
+  margin-bottom: 10px;
+}
+
+#myMenu li a.active {
+  font-weight: bold;
+  color: black;
+}
+
+#myMenu li a {
+  color: var(--menu-item-text-color);
+  background-color: var(--menu-item-bg-color);
+  padding: 10px;
+  border-radius: 5px;
+  display: block;
+  text-decoration: none;
+}
+
+#myMenu li a:hover {
+  background-color: rgb(222, 222, 222);
+  color: black;
+}
+
+.hotel-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .left,
+  .right {
+    flex: 1 1 100%;
+  }
+}
+
+.btn {
+  background-color: #000000;
+  border: black;
+}
