@@ -3,11 +3,11 @@ session_start();
 
 // Verificar si el usuario ha iniciado sesión
 if (!isset($_SESSION['usuario'])) {
-    header("Location: login.html");
+    header("Location: ../views/login.html");
     exit();
 }
 if (!isset($_SESSION['rol']) || $_SESSION['rol'] !== 'cliente') {
-    header("Location: login.html");
+    header("Location: ../views/login.html");
     exit();
 }
 
@@ -42,7 +42,7 @@ $result = $reservas->get_result();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Perfil - Travel Agent</title>
-    <link rel="stylesheet" href="estilos/styles.css">
+    <link rel="stylesheet" href="../estilos/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
 </head>
@@ -51,11 +51,10 @@ $result = $reservas->get_result();
 <header>
     <nav>
         <ul class="menu">
-            <li><a href="mi_perfil.php">Perfil</a></li>
-            <li><a href="plan.html">Plan</a></li>
-            <li><a href="vuelos.html">Vuelos</a></li>
-            <li><a href="reservas.php" class="active">Mis Reservas</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="../src/mi_perfil.php">Perfil</a></li>
+            <li><a href="../views/plan.html">Plan</a></li>
+            <li><a href="../src/reservas.php" class="active">Mis Reservas</a></li>
+            <li><a href="../views/servicios.html">Servicios</a></li>
         </ul>
     </nav>
 </header>

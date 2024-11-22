@@ -22,7 +22,7 @@ $query = $conexion->prepare("INSERT INTO usuarios (nombre, apellido, usuario, em
 $query->bind_param("ssssss", $nombre, $apellido, $usuario, $email, $password, $rol);
 
 if ($query->execute()) {
-    echo "Registro exitoso. <a href='login.html'>Inicia sesión</a>";
+    echo "Registro exitoso. <a href='../views/login.html'>Inicia sesión</a>";
 } else {
     echo "Error: " . $query->error;
 }

@@ -3,7 +3,7 @@ session_start();
 
 // Verificar si el usuario es administrador
 if (!isset($_SESSION['usuario']) || $_SESSION['rol'] !== 'administrador') {
-    header("Location: login.html");
+    header("Location: ../views/login.html");
     exit();
 }
 
@@ -58,7 +58,7 @@ $query_destinos = $conn->query("SELECT id, nombre FROM destinos");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panel de Administración - Travel Agent</title>
-    <link rel="stylesheet" href="estilos/styles.css">
+    <link rel="stylesheet" href="../estilos/styles.css">
     <link href="../bootstrap/bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="../bootstrap/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
     <script src="../bootstrap/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
