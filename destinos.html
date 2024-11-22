@@ -59,9 +59,7 @@
       <div
         id="destinos-container"
         class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"
-      >
-        <!-- Aquí se generará el contenido dinámico -->
-      </div>
+      ></div>
     </main>
 
     <footer class="bg-dark text-white text-center py-3">
@@ -70,7 +68,6 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", () => {
-        // Cargar el XML de destinos
         fetch("destinos.xml")
           .then((response) => response.text())
           .then((data) => {
