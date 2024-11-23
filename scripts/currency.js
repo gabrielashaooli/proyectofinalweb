@@ -37,3 +37,47 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const currencyForm = document.getElementById('currencyForm');
+    const resultDiv = document.getElementById('conversionResult');
+    const apiKey = '4d147981ea8a464570a579ce';
+
+    currencyForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const amount = parseFloat(document.getElementById('amount').value);
+        const fromCurrency = document.getElementById('fromCurrency').value;
+        const toCurrency = document.getElementById('toCurrency').value;
+
+        if (!isNaN(amount) && fromCurrency && toCurrency) {
+            getExchangeRate(amount, fromCurrency, toCurrency);
+        } else {
+            resultDiv.innerHTML = "<h6>Por favor, ingrese un monto válido y seleccione monedas.</h6>";
+        }
+    });
+
+    async function getExchangeRate(amount, fromCurrency, toCurrency) {
+        const url = `https://v6.exchangerate-api.com/v6/${apiKey}/pair/${fromCurrency}/${toCurrency}`;
+
+        try {
+            const response = await fetch(url);
+            const data = await response.json();
+
+            if (data.result === "success") {
+                const rate = data.conversion_rate;
+                const convertedAmount = (amount * rate).toFixed(2);
+                resultDiv.innerHTML = `
+                    <h5>${amount} ${fromCurrency} = ${convertedAmount} ${toCurrency}</h5>
+                    <p>Tasa de cambio: 1 ${fromCurrency} = ${rate.toFixed(4)} ${toCurrency}</p>
+                `;
+            } else {
+                resultDiv.innerHTML = "<h6>No se pudo obtener la tasa de cambio. Intente nuevamente.</h6>";
+            }
+        } catch (error) {
+            console.error('Error al obtener la tasa de cambio:', error);
+            resultDiv.innerHTML = "<h6>Error al conectar con el servicio. Por favor, inténtelo más tarde.</h6>";
+        }
+    }
+});
+

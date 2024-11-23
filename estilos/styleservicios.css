@@ -1,37 +1,41 @@
-/* Estilo general */
+.navbar {
+    min-height: 70px; 
+    display: flex;
+    align-items: center;
+    padding: 0 1rem; 
+    font-size: 1rem; 
+}
 
-/* Encabezado (Navbar) */
 .navbar-brand {
-    font-size: 2rem;
-    font-weight: lighter;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .navbar-nav .nav-link {
     font-size: 1rem;
-    font-weight: lighter;
-    color: #000;
+    font-weight: normal;
+    padding: 0.5rem 1rem; 
+}
+
+.navbar-light {
+    background-color: #f8f9fa; 
 }
 
 .navbar-nav .nav-link.active {
-    color: black;
+    font-weight: bold; 
 }
 
-.navbar-nav .nav-link:hover {
-    color: black;
-}
 
-/* Footer */
 footer {
     background-color: #f8f9fa;
     padding: 20px 0;
-    text-align: center;
-}
-
+  }
+  
 footer p {
     margin: 0;
     font-size: 14px;
     color: #6c757d;
-}
+  }
 
 /* Títulos y botones */
 .container h1 {
@@ -104,14 +108,10 @@ footer p {
     padding: 10px;
     border-radius: 5px;
     font-size: 1rem;
-    background-color: #007bff;
+    background-color: #6f7d8d;
     color: #fff;
     border: none;
     transition: background-color 0.3s ease;
-}
-
-.assistant-button:hover {
-    background-color: #0056b3;
 }
 
 /* Estilos del mapa */
@@ -142,7 +142,173 @@ footer p {
         font-size: 0.9rem;
     }
 
-    .assistant-button {
-        font-size: 0.9rem;
-    }
+
+        /* Estilo para la barra lateral */
+        .sidebar {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 250px;
+        }
+
+        .sidebar h2 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #b2c5da;
+            font-weight: bold;
+        }
+
+        /* Contenedor principal */
+        .content {
+            flex: 1;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Tarjetas de Clima y Moneda */
+        .weatherapp, .currencyapp {
+            padding: 20px;
+            background-color: #e3f2fd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .weatherapp h2, .currencyapp h2 {
+            text-align: center;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        .form-control {
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        .btnsearch {
+            margin-right: 5px;
+        }
+
+        .weatherapp {
+            background: linear-gradient(to right, #87CEEB, #f0f8ff);
+            border-radius: 12px;
+            color: #333;
+        }
+        
+        .weather-info {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .weather-city {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .weather-icon {
+            width: 80px;
+            height: 80px;
+        }
+        
+        .temperature {
+            font-weight: bold;
+            color: #eb9797;
+        }
+        
+        .quick-buttons button {
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        
+        .quick-buttons button:hover {
+            background: #b2c5da;
+            color: white;
+        }
+        
+        .search-input {
+            max-width: 300px;
+            border-radius: 8px;
+        }
+        
+        .btn {
+            border-radius: 8px;
+        }
+        
+        .text-muted {
+            color: #b2c5da !important;
+        }
+        
+        .card {
+            border: none;
+            border-radius: 15px;
+            background: linear-gradient(135deg, #ffffff, #f8f9fa);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+        h2, h4 {
+            font-weight: 600;
+        }
+        .list-group-item {
+            border: none;
+            padding: 15px;
+            transition: all 0.3s ease;
+        }
+        .list-group-item:hover {
+            background: #f0f0f0;
+            cursor: pointer;
+        }
+        .list-group-item a {
+            text-decoration: none;
+            color: #b2c5da;
+            font-weight: 500;
+        }
+        .list-group-item a:hover {
+            color: #b2c5da;
+        }
+        .text-danger:hover {
+            color: #d9534f !important;
+        }
+        .table {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .table th {
+            background-color: #343a40;
+            color: #fff;
+        }
+        .badge {
+            font-size: 0.85rem;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .badge-confirmado {
+            background-color: #28a745;
+            color: #fff;
+        }
+        .badge-pendiente {
+            background-color: #ffc107;
+            color: #212529;
+        }
+        .badge-cancelado {
+            background-color: #dc3545;
+            color: #fff;
+        }
+
 }
