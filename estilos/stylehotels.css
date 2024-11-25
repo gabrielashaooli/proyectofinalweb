@@ -98,3 +98,8 @@
   background-color: #000000;
   border: black;
 }
+
+.btn:hover {
+  background-color: #575757;
+  border: black;
+}

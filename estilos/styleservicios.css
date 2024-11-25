@@ -1,314 +1,358 @@
 .navbar {
-    min-height: 70px; 
-    display: flex;
-    align-items: center;
-    padding: 0 1rem; 
-    font-size: 1rem; 
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  font-size: 1rem;
 }
 
 .navbar-brand {
-    font-size: 1.5rem;
-    font-weight: bold;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .navbar-nav .nav-link {
-    font-size: 1rem;
-    font-weight: normal;
-    padding: 0.5rem 1rem; 
+  font-size: 1rem;
+  font-weight: normal;
+  padding: 0.5rem 1rem;
 }
 
 .navbar-light {
-    background-color: #f8f9fa; 
+  background-color: #f8f9fa;
 }
 
 .navbar-nav .nav-link.active {
-    font-weight: bold; 
+  font-weight: bold;
 }
 
-
 footer {
-    background-color: #f8f9fa;
-    padding: 20px 0;
-  }
-  
+  background-color: #f8f9fa;
+  padding: 20px 0;
+}
+
 footer p {
-    margin: 0;
-    font-size: 14px;
-    color: #6c757d;
-  }
+  margin: 0;
+  font-size: 14px;
+  color: #6c757d;
+}
 
 /* Títulos y botones */
 .container h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .btn-registro {
-    font-size: 18px;
-    padding: 12px 25px;
+  font-size: 18px;
+  padding: 12px 25px;
 }
 
 /* Grilla de fotos */
 .photo-grid img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-    transition: transform 0.3s ease-in-out;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
 }
 
 .photo-grid img:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .photo-grid .col {
-    padding: 0;
-    margin-bottom: 20px;
+  padding: 0;
+  margin-bottom: 20px;
 }
 
 /* Estilos para el generador */
 .destino {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    padding: 20px;
-    transition: transform 0.2s ease-in-out;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 20px;
+  transition: transform 0.2s ease-in-out;
 }
 
 .destino-titulo {
-    font-size: 1.8rem;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
 }
 
 .destino-detalles {
-    font-size: 1rem;
-    color: #555;
-    text-align: center;
-    margin-bottom: 20px;
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 /* Inputs y botones */
 .assistant-input {
-    max-width: 600px;
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    font-size: 1rem;
+  max-width: 600px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
 }
 
 .assistant-button {
-    max-width: 200px;
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 1rem;
-    background-color: #6f7d8d;
-    color: #fff;
-    border: none;
-    transition: background-color 0.3s ease;
+  max-width: 200px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #6f7d8d;
+  color: #fff;
+  border: none;
+  transition: background-color 0.3s ease;
 }
 
 /* Estilos del mapa */
 #map {
-    width: 100%;
-    height: 75vh; /* Altura del 75% de la ventana */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 75vh; /* Altura del 75% de la ventana */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Carrusel */
 .carousel-inner img {
-    max-height: 400px;
-    object-fit: cover;
+  max-height: 400px;
+  object-fit: cover;
 }
 
 /* Responsivo */
 @media (max-width: 768px) {
-    .navbar-brand {
-        font-size: 1.5rem;
-    }
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
 
-    .destino-titulo {
-        font-size: 1.5rem;
-    }
+  .destino-titulo {
+    font-size: 1.5rem;
+  }
 
-    .assistant-input {
-        font-size: 0.9rem;
-    }
+  .assistant-input {
+    font-size: 0.9rem;
+  }
 
+  /* Estilo para la barra lateral */
+  .sidebar {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+  }
 
-        /* Estilo para la barra lateral */
-        .sidebar {
-            background-color: #f8f9fa;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 250px;
-        }
+  .sidebar h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
 
-        .sidebar h2 {
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-        }
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
 
-        .sidebar ul {
-            list-style: none;
-            padding: 0;
-        }
+  .sidebar ul li {
+    margin-bottom: 10px;
+  }
 
-        .sidebar ul li {
-            margin-bottom: 10px;
-        }
+  .sidebar ul li a {
+    text-decoration: none;
+    color: #b2c5da;
+    font-weight: bold;
+  }
 
-        .sidebar ul li a {
-            text-decoration: none;
-            color: #b2c5da;
-            font-weight: bold;
-        }
+  /* Contenedor principal */
+  .content {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
 
-        /* Contenedor principal */
-        .content {
-            flex: 1;
-            padding: 20px;
-            background-color: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
+  /* Tarjetas de Clima y Moneda */
+  .weatherapp,
+  .currencyapp {
+    padding: 20px;
+    background-color: #e3f2fd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
 
-        /* Tarjetas de Clima y Moneda */
-        .weatherapp, .currencyapp {
-            padding: 20px;
-            background-color: #e3f2fd;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
+  .weatherapp h2,
+  .currencyapp h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
 
-        .weatherapp h2, .currencyapp h2 {
-            text-align: center;
-            font-size: 1.8rem;
-            margin-bottom: 20px;
-        }
+  .form-control {
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
 
-        .form-control {
-            margin-bottom: 10px;
-            border-radius: 5px;
-        }
+  .btnsearch {
+    margin-right: 5px;
+  }
 
-        .btnsearch {
-            margin-right: 5px;
-        }
+  .weatherapp {
+    background: linear-gradient(to right, #87ceeb, #f0f8ff);
+    border-radius: 12px;
+    color: #333;
+  }
 
-        .weatherapp {
-            background: linear-gradient(to right, #87CEEB, #f0f8ff);
-            border-radius: 12px;
-            color: #333;
-        }
-        
-        .weather-info {
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-        }
-        
-        .weather-city {
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-        
-        .weather-icon {
-            width: 80px;
-            height: 80px;
-        }
-        
-        .temperature {
-            font-weight: bold;
-            color: #eb9797;
-        }
-        
-        .quick-buttons button {
-            padding: 10px 20px;
-            border-radius: 5px;
-            transition: all 0.3s ease;
-        }
-        
-        .quick-buttons button:hover {
-            background: #b2c5da;
-            color: white;
-        }
-        
-        .search-input {
-            max-width: 300px;
-            border-radius: 8px;
-        }
-        
-        .btn {
-            border-radius: 8px;
-        }
-        
-        .text-muted {
-            color: #b2c5da !important;
-        }
-        
-        .card {
-            border: none;
-            border-radius: 15px;
-            background: linear-gradient(135deg, #ffffff, #f8f9fa);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-        }
-        h2, h4 {
-            font-weight: 600;
-        }
-        .list-group-item {
-            border: none;
-            padding: 15px;
-            transition: all 0.3s ease;
-        }
-        .list-group-item:hover {
-            background: #f0f0f0;
-            cursor: pointer;
-        }
-        .list-group-item a {
-            text-decoration: none;
-            color: #b2c5da;
-            font-weight: 500;
-        }
-        .list-group-item a:hover {
-            color: #b2c5da;
-        }
-        .text-danger:hover {
-            color: #d9534f !important;
-        }
-        .table {
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-        .table th {
-            background-color: #343a40;
-            color: #fff;
-        }
-        .badge {
-            font-size: 0.85rem;
-            padding: 5px 10px;
-            border-radius: 5px;
-        }
-        .badge-confirmado {
-            background-color: #28a745;
-            color: #fff;
-        }
-        .badge-pendiente {
-            background-color: #ffc107;
-            color: #212529;
-        }
-        .badge-cancelado {
-            background-color: #dc3545;
-            color: #fff;
-        }
+  .weather-info {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
 
+  .weather-city {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .weather-icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .temperature {
+    font-weight: bold;
+    color: #eb9797;
+  }
+
+  .quick-buttons button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .quick-buttons button:hover {
+    background: #b2c5da;
+    color: white;
+  }
+
+  .search-input {
+    max-width: 300px;
+    border-radius: 8px;
+  }
+
+  .btn {
+    border-radius: 8px;
+  }
+
+  .text-muted {
+    color: #b2c5da !important;
+  }
+
+  .card {
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #ffffff, #f8f9fa);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  h2,
+  h4 {
+    font-weight: 600;
+  }
+  .list-group-item {
+    border: none;
+    padding: 15px;
+    transition: all 0.3s ease;
+  }
+  .list-group-item:hover {
+    background: #f0f0f0;
+    cursor: pointer;
+  }
+  .list-group-item a {
+    text-decoration: none;
+    color: #b2c5da;
+    font-weight: 500;
+  }
+  .list-group-item a:hover {
+    color: #b2c5da;
+  }
+  .text-danger:hover {
+    color: #d9534f !important;
+  }
+  .table {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  .table th {
+    background-color: #343a40;
+    color: #fff;
+  }
+  .badge {
+    font-size: 0.85rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  .badge-confirmado {
+    background-color: #28a745;
+    color: #fff;
+  }
+  .badge-pendiente {
+    background-color: #ffc107;
+    color: #212529;
+  }
+  .badge-cancelado {
+    background-color: #dc3545;
+    color: #fff;
+  }
+}
+.sidebar {
+  width: 250px;
+  background-color: #343a40; /* Set background to black */
+  color: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.sidebar .list-group-item {
+  background-color: #60676e; /* Ensure the menu items match the sidebar's black background */
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.sidebar .list-group-item a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar .list-group-item:hover a {
+  background-color: #495057; /* Darker shade when hovering */
+  text-decoration: none;
+}
+
+.sidebar .list-group-item.active a {
+  background-color: #adadad; /* Active menu item background */
+}
+
+/* Styling the active menu item */
+.sidebar .list-group-item.active a {
+  font-weight: bold;
 }
