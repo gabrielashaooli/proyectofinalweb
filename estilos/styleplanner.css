@@ -1,0 +1,135 @@
+/* General */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Barra de navegación */
+.navbar {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: #f1f1f1;
+  border-radius: 4px;
+}
+
+.navbar-nav .nav-link.active {
+  font-weight: bold;
+  color: #0056b3;
+}
+
+/* Contenedor principal */
+.container {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Título principal */
+.container h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Formulario */
+.form-wrapper {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.assistant-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.assistant-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.assistant-button:hover {
+  background-color: #0056b3;
+}
+
+/* Sugerencia o hint */
+.hint {
+  font-size: 1rem;
+  color: #6c757d;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Respuesta */
+.answer {
+  font-size: 1rem;
+  color: #28a745;
+  text-align: center;
+  display: none;
+  margin-top: 20px;
+}
+
+/* Pie de página */
+footer {
+  background-color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+  color: #6c757d;
+  border-top: 1px solid #ddd;
+}
+
+.form-generator {
+  text-align: center;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .container h1 {
+    font-size: 28px;
+  }
+
+  .assistant-input,
+  .assistant-button {
+    font-size: 0.9rem;
+  }
+}
