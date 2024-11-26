@@ -36,6 +36,35 @@ footer p {
   color: #6c757d;
 }
 
+/* Ensure the body and html take up the full height of the viewport */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main content area should take the remaining space */
+main {
+  flex: 1;
+}
+
+/* Footer should stay at the bottom */
+footer {
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 1rem;
+  border-top: 1px solid #dee2e6;
+}
+
+/* Optional: wrapper div to handle layout */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 /* Títulos y botones */
 .container h1 {
   font-size: 36px;
@@ -355,4 +384,31 @@ footer p {
 /* Styling the active menu item */
 .sidebar .list-group-item.active a {
   font-weight: bold;
+}
+
+/* Ensure the body takes full height of the viewport */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Allow content to grow */
+}
+
+/* Ensure the main content area takes the remaining space */
+main {
+  flex: 1; /* This makes the main content area grow to fill available space */
+}
+
+/* Style for the footer */
+footer {
+  background-color: #343a40; /* Dark background */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: auto; /* Push footer to the bottom if content is less */
+}
+
+footer p {
+  margin: 0; /* Remove any margin for the footer content */
 }
